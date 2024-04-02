@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="name">ToDo Name: </label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="description">Add Description: </label>
+        <input type="text" id="description" name="description">
+        <br>
+        
+        <button type="submit">Add Item</button>
+    </form>
+    <h2>Todo List</h2>
+    <ul id="listItem"></ul>
+
+    <h2>Completed Todos</h2>
+    <ul id="completedList"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>
